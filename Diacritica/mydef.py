@@ -25,7 +25,7 @@ def set_lang(fisier):
     logging.error ('Nu am putut seta nume fisier nou')
     raise
 
-# functie replace in baza directorului cu diacritice
+# functie replace in baza dictionarului cu diacritice
 def replace_all(text, dic):
   for i, j in dic.iteritems():
     try:
