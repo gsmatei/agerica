@@ -10,7 +10,7 @@ def read_file(fisier):
     f.close()
     return fileData
   except:
-    logging.error ('Nu am putut deschide fisierul sursa: %s', fisier)
+    logging.error ('Nu am putut deschide fisierul sursa: {0}'.format(fisier))
     raise
 
 # functie seteaza fisiere subtitrare OUT si noua limba in functie de prezenta/absenta limbi 'Ro'
@@ -42,5 +42,5 @@ def write_file(fisier, data):
     f.write(data)
     f.close()
   except:
-    logging.error ('Nu am putut salva fisierul generat: %s', fisier)
+    logging.error ('Nu am putut salva fisierul generat: {0}'.format(fisier))
     raise

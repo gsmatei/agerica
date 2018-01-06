@@ -45,5 +45,5 @@ newData = mydef.replace_all(fileData, reps)
 mydef.write_file(fileOut, newData)
 
 
-logging.info('Succes! S-a generat fisierul: %s', fileOut)
+logging.info('Succes! S-a generat fisierul: {0}'.format(fileOut))
 print '\nSucces! S-a generat fisierul:', fileOut
